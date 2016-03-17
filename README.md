@@ -7,4 +7,5 @@ BroadcastReceiver（广播接收器）是Android中的四大组件之一，专�
         （1）注册广播：注册方式有两种，一种是在AndroidManifest.xml文件中定义，指定该BroadcastReceiver所响应的Intent的Action；另一种是使用代码进行指定，调用BroadcastReceiver的Context的registerReceiver(BroadcastReceiver receiver, IntentFilter filter)方法指定；这两种注册方式都需要IntentFIlter。
         （2）发送广播：调用Context的sendBroadcast来发发送指定的BroadcastReceiver，也就是使用Intent来传递注册时用到的Action。
         （3）接收广播：当发送的广播被广播接收器监听到之后，BroadcastReceiver的onReceive()方法将会被触发，从而在该方法中显示广播所携带的信息或者进行一些简单的操作。
+
 ![ABC](http://img.blog.csdn.net/20160121005240767?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center)
